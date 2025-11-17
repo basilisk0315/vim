@@ -166,8 +166,8 @@ static struct vimvar
     {VV_NAME("wayland_display",  VAR_STRING), NULL, VV_RO},
     {VV_NAME("clipmethod",	 VAR_STRING), NULL, VV_RO},
     {VV_NAME("termda1",		 VAR_STRING), NULL, VV_RO},
-    {VV_NAME("termosc",		 VAR_STRING), NULL, VV_RO},
-    {VV_NAME("clipproviders",	 VAR_DICT), &t_dict_string, VV_RO}
+    {VV_NAME("termosc",	 VAR_STRING), NULL, VV_RO},
+    {VV_NAME("vim_did_init",	 VAR_NUMBER), NULL, VV_RO},
 };
 
 // shorthand
@@ -2022,7 +2022,7 @@ ex_let_one(
     void
 ex_unlet(exarg_T *eap)
 {
-    ex_unletlock(eap, eap->arg, 0, 0, do_unlet_var, NULL);
+    ex_unletlock(eap, eap->arg, 0, eap->forceit ? GLV_QUIET : 0, do_unlet_var, NULL);
 }
 
 /*

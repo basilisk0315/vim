@@ -105,7 +105,6 @@ NEW_TESTS = \
 	test_cjk_linebreak \
 	test_clientserver \
 	test_clipmethod \
-	test_clipboard_provider \
 	test_close_count \
 	test_cmd_lists \
 	test_cmdline \
@@ -248,6 +247,7 @@ NEW_TESTS = \
 	test_plugin_helptoc \
 	test_plugin_man \
 	test_plugin_matchparen \
+	test_plugin_netrw \
 	test_plugin_tar \
 	test_plugin_termdebug \
 	test_plugin_tohtml \
@@ -396,7 +396,6 @@ NEW_TESTS_RES = \
 	test_cjk_linebreak.res \
 	test_clientserver.res \
 	test_clipmethod.res \
-	test_clipboard_provider.res \
 	test_close_count.res \
 	test_cmd_lists.res \
 	test_cmdline.res \
@@ -522,6 +521,7 @@ NEW_TESTS_RES = \
 	test_plugin_helptoc.res \
 	test_plugin_man.res \
 	test_plugin_matchparen.res \
+	test_plugin_netrw.res \
 	test_plugin_tar.res \
 	test_plugin_termdebug.res \
 	test_plugin_tohtml.res \
